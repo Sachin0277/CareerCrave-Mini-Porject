@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+
+  color: #000000;
+}
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 0;
+  color: #333;
+  user-select: text;
+  background-color: #ffffff;
+  
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #000000;
+}
+
+.drag-icon {
+  left: 12.5%;
+  right: 12.5%;
+  top: 25%;
+  bottom: 25%;
+
+  margin-right: 10px;
+  cursor: move;
+}
+
+.info-icon {
+  margin-left: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.section-name {
+  flex: 1;
+}
+
+.name-input {
+  border: 1px solid black;
+  outline: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #000000;
+  margin-left:10px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.edit-icon,
+.save-btn-edit {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  margin-right: 26px;
+  font-size: 18px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.edit-icon svg {
+  margin-right: 5px;
+}
+.section.editing .save-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+.section.editing {
+  background-color: white;
+}
+.section.editing ~ .section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0px;
+  gap: 10px;
+  position: relative;
+  background: #B6B6B6;
+  box-sizing: border-box;
+  padding: 2px;
+
+
+  
+}
+.section.editing ~ .section:before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+}
+.section-footer {
+  display: flex;
+  justify-content: right;
+}
+
+.toggle {
+  border-radius: 75px;
+  width: 55px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2.5px solid #d0bcff;
+  border-radius: 75px;
+  background: #d0bcff;
+  cursor: pointer;
+}
+
+.toggle svg {
+  width: 25px;
+  height: 25px;
+
+  left: calc(50% - 18px / 2);
+  top: calc(50% - 18px / 2);
+  background: #381e72;
+  color: #fff;
+  border-radius: 25px;
+}
+.toggle.left {
+  justify-content: flex-start;
+}
+
+.toggle.right {
+  justify-content: flex-end;
+}
+
+.toggle.correct {
+  background: #d0bcff;
+}
+
+.toggle.correct svg {
+  color: #fff;
+}
+
+.toggle.incorrect {
+  background: #e6e6e6;
+  border: 2.5px solid #8b8b8b;
+}
+
+.toggle.incorrect svg {
+  background: #8b8b8b;
+}
+.save-button {
+  margin-left: 20%;
+  padding: 20px 210px;
+  gap: 10px;
+  margin-top: 32px;
+  background: #8a4893;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.save-button span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+
+  color: #ffffff;
+}
